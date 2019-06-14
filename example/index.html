@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/leForm.css">
+  <title>Document</title>
+  <style>
+    .form {
+      width: 1170px;
+      margin: 100px auto 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div></div>
+    <form-container class="form"  ref="form" labelWidth="72" :model="model" :rules="rules">
+      <form-item label="表单项1" prop="one">
+        <el-input v-model="model.one" placeholder="请输入"></el-input>
+      </form-item>
+      <form-item label="表单项2" prop="two">
+        <el-input v-model="model.two" placeholder="请输入"></el-input>
+      </form-item>
+      <form-item label="表单项3" prop="three">
+        <el-input v-model="model.three" placeholder="请输入"></el-input>
+      </form-item>
+      <form-item label="表单项4" prop="four" inline span="12">
+        <el-input v-model="model.four" placeholder="请输入"></el-input>
+      </form-item>
+      <form-item label="表单项5" prop="five" inline span="12">
+        <el-input v-model="model.five" placeholder="请输入"></el-input>
+      </form-item>
+    </form-container>
+  </div>
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="../dist/leForm.umd.js"></script>
+  <script>
+    Vue.prototype.$ELEMENT = { size: 'small', zIndex: 3000 };
+    var app = new Vue({
+      el: '#app',
+      data() {
+        return {
+          model: {
+            one: '',
+            two: '',
+            three: '',
+            four: '',
+            five: '',
+          },
+          rules: {
+            one: [
+              { required: true, message: '请填写', trigger: 'blur' },
+            ],
+          },
+        };
+      },
+    });
+  </script>
+</body>
+</html>

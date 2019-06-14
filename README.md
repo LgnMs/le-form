@@ -61,7 +61,7 @@ var app = new Vue({
 
 ## 效果展示
 
-![image](./public/images/1.jpg)
+![image](https://github.com/LgnMs/le-form/raw/master/public/images/1.jpg)
 
 ## 文档
 

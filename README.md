@@ -12,6 +12,14 @@
 
 需要先全局注册element-ui的el-form、el-form-item、el-tooltip三个组件
 
+## 安装
+
+```S
+npm install le-form --save
+Or
+yarn add le-form
+```
+
 ## 使用
 
 ```html

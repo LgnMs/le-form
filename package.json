@@ -1,7 +1,7 @@
 {
   "name": "le-form",
   "version": "1.0.0",
-  "private": true,
+  "description": "基于element-ui 的form表单实现的一个高拓展性的表格布局组件，能够用于日常使用表单的布局实现。",
   "scripts": {
     "serve": "vue-cli-service serve --copy ./exapmle/main.js",
     "build": "vue-cli-service build --target lib --name leForm src/index.js",

@@ -128,8 +128,8 @@ export default {
 
 
 <style lang="scss">
-$border-color: rgb(153, 153, 153);
-$lable-bgcolor: #fff;
+$border-color: #e9e9e9;
+$lable-bgcolor: #FAFAFA;
 .FormItem {
   font-size: 12px;
   position: relative;

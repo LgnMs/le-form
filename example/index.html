@@ -19,6 +19,7 @@
   <div id="app">
     <div></div>
     <form-container class="form"  ref="form" labelWidth="72" :model="model" :rules="rules">
+      <form-title>示例</form-title>
       <form-item label="表单项1" prop="one">
         <el-input v-model="model.one" placeholder="请输入"></el-input>
       </form-item>
@@ -34,6 +35,7 @@
       <form-item label="表单项5" prop="five" inline span="12">
         <el-input v-model="model.five" placeholder="请输入"></el-input>
       </form-item>
+      <el-button @click="submit">submit</el-button>
     </form-container>
   </div>
   <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
@@ -58,6 +60,13 @@
             ],
           },
         };
+      },
+      methods: {
+        submit() {
+          this.$refs.form.validate((valid) => {
+            console.log(validm, this.model);
+          });
+        },
       },
     });
   </script>

@@ -56,7 +56,7 @@ export default {
 
 
 <style lang="scss">
-$border-color: rgb(153, 153, 153);
+$border-color: #ddd;
 .FormContainer {
   font-size: 0;
   // border-top: 1px solid $border-color;

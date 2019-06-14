@@ -61,4 +61,52 @@ var app = new Vue({
 
 ## 效果展示
 
-![image](https://note.youdao.com/favicon.ico)
+![image](./public/images/1.jpg)
+
+## 文档
+
+### FormContainer （表单容器）
+
+> model和rules的使用方法与element-ui的form组件一致
+
+#### FormContainer Attributes
+
+参数 | 说明 | 类型 | 可选值 | 默认值
+---|---|---|---|---
+labelWidth | lable宽度 | number/string | —— | ——
+model | 表单数据对象 | object | —— | ——
+rules | 表单验证规则 | object | —— | ——
+
+#### FormContainer Methods
+
+方法名 | 说明 | 参数
+---|---|---
+validate | 对整个表单进行校验的方法，参数为一个回调函数 | Function(callback: Function(boolean, object))
+
+### FormTitle （表单标题）
+
+#### FormTitle Slot
+
+name | 说明
+---|---
+—— | FormTitle内容
+
+### FormItem (表单项)
+
+#### FormItem Attributes
+
+参数 | 说明 | 类型 | 可选值 | 默认值
+---|---|---|---|---
+label | 标签文本 | string | —— | ——
+inline | 是否级联显示 | boolean | —— | false
+span | 所占24列中的多少份 | number/string | —— | 24
+prop | 表单域 model 字段，在使用 validate方法的情况下，该属性是必填的 | string | 传入 Form 组件的 model 中的字段 | ——
+height | formItem的高度 | number/string | —— | ——
+alignTop | 内容区是否从顶部开始布局，默认垂直居中 | boolean | —— | false
+noPadding | 是否有内边距 | boolean | - | false
+
+#### FormItem Slot
+
+name | 说明
+---|---
+—— | FormItem内容

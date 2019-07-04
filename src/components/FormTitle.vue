@@ -1,6 +1,5 @@
 <template>
   <div class="FormTitle">
-    <le-icon icon="jiantou"></le-icon>
     <div class="FormTitle-text">
       <slot></slot>
     </div>

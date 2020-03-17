@@ -7,7 +7,7 @@
 - [x] 栅格化布局
 - [x] 表单数据绑定
 - [x] 表单验证
-
+- [ ] 表格高度会根据内容高度自动产生变化
 ## 前置条件
 
 需要先全局注册element-ui的el-form、el-form-item、el-tooltip三个组件

@@ -50,6 +50,9 @@ export default {
     validate2(prop, msgStatus, validateMessage) {
       formSubject.next({ prop, msgStatus, validateMessage });
     },
+    validateField(props, callback) {
+      this.$refs.Form.validateField(props, callback);
+    },
   },
 };
 </script>

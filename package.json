@@ -1,6 +1,6 @@
 {
   "name": "le-form",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "基于element-ui 的form表单实现的一个高拓展性的表格布局组件，能够用于日常使用表单的布局实现。",
   "author": "<lgn 792841450@qq.com>",
   "license": "MIT",
